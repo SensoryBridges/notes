@@ -1,0 +1,929 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0079)file:///C:/Users/qxb843/Downloads/Brooks_Band_IEP_Progress_Notes_CORRECTED.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brooks Band™ — IEP Progress Note Sample Outputs</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --ink: #0f172a; --mid: #334155; --sub: #64748b;
+  --rule: #cbd5e1; --rule-light: #e2e8f0; --bg: #f8fafc; --white: #fff;
+  --teal: #0f766e; --teal-light: #ccfbf1; --teal-mid: #5eead4;
+  --amber: #b45309; --amber-light: #fef3c7;
+  --green: #15803d; --green-light: #dcfce7;
+  --red: #b91c1c; --red-light: #fee2e2;
+  --blue: #1d4ed8; --blue-light: #dbeafe;
+  --violet: #6d28d9; --violet-light: #ede9fe;
+}
+body { background: #e2e8f0; font-family: system-ui, -apple-system, Segoe UI, sans-serif; color: var(--ink); padding: 24px 12px 60px; min-height: 100vh; }
+
+/* ─── TOP NAV ─── */
+.top-nav { max-width: 920px; margin: 0 auto 0; background: var(--ink); display: flex; align-items: stretch; }
+.nav-brand { padding: 14px 20px; color: white; font-family: Georgia, 'Times New Roman', serif; font-size: 14px; border-right: 1px solid rgba(255,255,255,0.12); white-space: nowrap; }
+.nav-brand span { color: var(--teal-mid); }
+.nav-tabs { display: flex; flex: 1; }
+.nav-tab { flex: 1; padding: 0 16px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 11.5px; font-weight: 500; color: rgba(255,255,255,0.55); letter-spacing: 0.04em; border-right: 1px solid rgba(255,255,255,0.08); transition: all 0.15s; text-align: center; line-height: 1.3; min-height: 48px; }
+.nav-tab:hover { color: rgba(255,255,255,0.85); background: rgba(255,255,255,0.06); }
+.nav-tab.active { color: white; background: rgba(255,255,255,0.1); border-bottom: 3px solid var(--teal-mid); }
+.nav-tab-sub { font-size: 9px; opacity: 0.65; display: block; margin-top: 2px; letter-spacing: 0.06em; text-transform: uppercase; }
+
+/* ─── SAMPLE BANNER ─── */
+.sample-banner { max-width: 920px; margin: 0 auto; background: var(--amber-light); border: 1px solid #d97706; border-top: none; padding: 7px 16px; font-size: 11px; font-weight: 500; color: var(--amber); letter-spacing: 0.03em; display: flex; align-items: center; gap: 8px; }
+
+/* ─── PANELS ─── */
+.panel { display: none; max-width: 920px; margin: 0 auto; }
+.panel.active { display: block; }
+
+/* ─── DOCUMENT ─── */
+.doc { background: var(--white); border: 1px solid var(--rule); border-top: none; box-shadow: 0 2px 16px rgba(0,0,0,0.06); }
+
+/* ─── AGENCY HEADER ─── */
+.agency-hdr { background: var(--ink); color: white; padding: 16px 28px; display: flex; justify-content: space-between; align-items: center; }
+.agency-name { font-family: Georgia, 'Times New Roman', serif; font-size: 14px; font-weight: 600; }
+.agency-sub { font-size: 10px; font-weight: 300; opacity: 0.6; margin-top: 2px; letter-spacing: 0.07em; text-transform: uppercase; }
+.form-id { font-family: Consolas, 'Courier New', monospace; font-size: 9.5px; opacity: 0.55; text-align: right; line-height: 1.7; }
+
+/* ─── TITLE BARS ─── */
+.title-bar { padding: 9px 28px; color: white; display: flex; justify-content: space-between; align-items: center; }
+.title-bar h1 { font-size: 11.5px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; }
+.title-bar-badge { font-size: 9.5px; font-weight: 500; background: rgba(255,255,255,0.18); padding: 3px 10px; letter-spacing: 0.07em; display: flex; align-items: center; gap: 5px; white-space: nowrap; }
+.title-bar-badge::before { content: '●'; font-size: 6px; color: var(--teal-mid); }
+.bar-teal { background: var(--teal); }
+.bar-blue { background: var(--blue); }
+.bar-violet { background: var(--violet); }
+
+/* ─── BODY ─── */
+.fbody { padding: 24px 28px 32px; }
+
+/* ─── STUDENT GRID ─── */
+.sgrid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.2fr; gap: 0; border: 1px solid var(--rule); margin-bottom: 20px; }
+.scell { padding: 7px 11px; border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+.scell:last-child { border-right: none; }
+.scell.s2 { grid-column: span 2; }
+.scell.s4 { grid-column: span 4; border-right: none; }
+.fl { font-size: 8.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sub); margin-bottom: 2px; }
+.fv { font-size: 12.5px; font-weight: 500; color: var(--ink); }
+.fv.mono { font-family: Consolas, 'Courier New', monospace; font-size: 11px; }
+.fv.sm { font-size: 11.5px; font-weight: 400; color: var(--mid); }
+
+/* ─── SECTION HEADER ─── */
+.sh { display: flex; align-items: center; gap: 9px; margin: 20px 0 9px; padding-bottom: 5px; border-bottom: 2px solid var(--ink); }
+.snum { width: 20px; height: 20px; background: var(--ink); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; flex-shrink: 0; }
+.stitle { font-size: 10.5px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink); }
+.lcite { margin-left: auto; font-size: 9px; font-family: Consolas, 'Courier New', monospace; color: var(--sub); background: var(--rule-light); padding: 2px 6px; white-space: nowrap; }
+
+/* ─── CALLOUT ─── */
+.callout { display: flex; gap: 9px; background: var(--teal-light); border-left: 3px solid var(--teal); padding: 9px 13px; margin: 10px 0; font-size: 11.5px; color: var(--teal); line-height: 1.5; }
+.callout.blue { background: var(--blue-light); border-color: var(--blue); color: var(--blue); }
+.callout.violet { background: var(--violet-light); border-color: var(--violet); color: var(--violet); }
+
+/* ─── PLAFP ─── */
+.plafp { background: var(--bg); border: 1px solid var(--rule); padding: 13px 15px; font-size: 12.5px; line-height: 1.65; color: var(--mid); margin-bottom: 5px; }
+.plafp strong { color: var(--ink); font-weight: 600; }
+.dtag { display: inline-flex; align-items: center; gap: 5px; font-size: 9px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 7px; margin-top: 7px; }
+.dtag.teal { background: var(--teal-light); color: var(--teal); }
+.dtag.blue { background: var(--blue-light); color: var(--blue); }
+.dtag.violet { background: var(--violet-light); color: var(--violet); }
+.dtag::before { content: '◆'; font-size: 6px; }
+
+/* ─── GOAL TABLE ─── */
+.gtable { width: 100%; border-collapse: collapse; font-size: 12px; margin: 4px 0; }
+.gtable th { background: var(--ink); color: white; font-size: 8.5px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; padding: 6px 11px; text-align: left; white-space: nowrap; }
+.gtable td { padding: 8px 11px; border-bottom: 1px solid var(--rule-light); vertical-align: top; color: var(--mid); line-height: 1.5; }
+.gtable tr:last-child td { border-bottom: none; }
+.gtable tr:nth-child(even) td { background: var(--bg); }
+.chip { display: inline-block; font-size: 9.5px; font-weight: 600; padding: 2px 8px; white-space: nowrap; }
+.chip.g { background: var(--green-light); color: var(--green); }
+.chip.a { background: var(--amber-light); color: var(--amber); }
+.chip.r { background: var(--red-light); color: var(--red); }
+.chip.b { background: var(--blue-light); color: var(--blue); }
+
+/* ─── DATA PANEL ─── */
+.dpanel { border: 1px solid; margin: 16px 0; }
+.dpanel.green { border-color: #86efac; }
+.dpanel.blue { border-color: #93c5fd; }
+.dpanel.violet { border-color: #c4b5fd; }
+.dphdr { color: white; padding: 7px 14px; display: flex; justify-content: space-between; align-items: center; font-size: 9.5px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; }
+.dphdr.green { background: var(--green); }
+.dphdr.blue { background: var(--blue); }
+.dphdr.violet { background: var(--violet); }
+.dphdr span { font-family: Consolas, 'Courier New', monospace; font-weight: 400; opacity: 0.75; text-transform: none; letter-spacing: 0; }
+.otable { width: 100%; border-collapse: collapse; font-size: 11px; }
+.otable th { font-size: 8.5px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; padding: 5px 13px; text-align: left; border-bottom: 1px solid; }
+.otable th.green { background: rgba(21,128,61,0.07); color: var(--green); border-color: #86efac; }
+.otable th.blue { background: rgba(29,78,216,0.07); color: var(--blue); border-color: #93c5fd; }
+.otable th.violet { background: rgba(109,40,217,0.07); color: var(--violet); border-color: #c4b5fd; }
+.otable td { padding: 6px 13px; border-bottom: 1px solid; font-family: Consolas, 'Courier New', monospace; font-size: 10.5px; color: var(--mid); }
+.otable td.green { border-color: #d1fae5; }
+.otable td.blue { border-color: #dbeafe; }
+.otable td.violet { border-color: #ede9fe; }
+.otable tr:last-child td { border-bottom: none; }
+.up { color: var(--green); font-weight: 600; }
+.mid-c { color: var(--amber); font-weight: 600; }
+.dn { color: var(--red); font-weight: 600; }
+
+/* ─── BAR CHART ─── */
+.chart-wrap { margin: 16px 0; }
+.chart-lbl { font-size: 9.5px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; color: var(--sub); margin-bottom: 7px; }
+.goal-lbl { font-size: 8.5px; font-weight: 600; margin-bottom: 3px; text-align: right; padding-right: 46px; }
+.goal-lbl.teal { color: var(--teal); }
+.goal-lbl.blue { color: var(--blue); }
+.goal-lbl.violet { color: var(--violet); }
+.bar-rows { display: flex; flex-direction: column; gap: 5px; }
+.brow { display: grid; grid-template-columns: 62px 1fr 40px; align-items: center; gap: 8px; }
+.bwk { font-size: 9.5px; font-family: Consolas, 'Courier New', monospace; color: var(--sub); text-align: right; }
+.btrack { height: 14px; background: var(--rule-light); position: relative; }
+.bfill { height: 100%; position: absolute; left: 0; top: 0; }
+.bline { position: absolute; top: 0; height: 100%; width: 2px; opacity: 0.65; }
+.bpct { font-size: 10px; font-family: Consolas, 'Courier New', monospace; font-weight: 500; text-align: right; }
+.chart-legend { display: flex; gap: 18px; margin-top: 7px; font-size: 9.5px; color: var(--sub); flex-wrap: wrap; }
+.chart-legend span { display: flex; align-items: center; gap: 5px; }
+.legend-dot { width: 11px; height: 11px; display: inline-block; }
+
+/* ─── NARRATIVE ─── */
+.narrative { border: 1px solid var(--rule); padding: 13px 15px; font-size: 12.5px; line-height: 1.7; color: var(--mid); background: var(--white); margin-top: 7px; }
+.narrative strong { color: var(--ink); }
+
+/* ─── BILLING TABLE (SLP) ─── */
+.bill-table { width: 100%; border-collapse: collapse; font-size: 11.5px; margin: 8px 0; }
+.bill-table th { background: var(--blue); color: white; font-size: 8.5px; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; padding: 7px 11px; text-align: left; }
+.bill-table td { padding: 7px 11px; border-bottom: 1px solid var(--rule-light); color: var(--mid); vertical-align: top; }
+.bill-table tr:last-child td { border-bottom: none; }
+.bill-table tr:nth-child(even) td { background: var(--bg); }
+.cpt { font-family: Consolas, 'Courier New', monospace; font-size: 11px; font-weight: 500; }
+
+/* ─── REC GRID ─── */
+.rec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; margin-top: 9px; }
+.rec-card { border: 1px solid var(--rule); padding: 11px 13px; }
+.rc-lbl { font-size: 8.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sub); margin-bottom: 5px; }
+.rc-txt { font-size: 11.5px; line-height: 1.55; color: var(--mid); }
+
+/* ─── SIG ─── */
+.sig { display: grid; grid-template-columns: repeat(3,1fr); border: 1px solid var(--rule); margin-top: 24px; }
+.sigc { padding: 11px 13px; border-right: 1px solid var(--rule); }
+.sigc:last-child { border-right: none; }
+.sig-lbl { font-size: 8.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sub); margin-bottom: 14px; }
+.sig-line { border-bottom: 1px solid var(--ink); margin-bottom: 3px; }
+.sig-name { font-size: 10px; color: var(--sub); }
+
+/* ─── FOOTER ─── */
+.doc-footer { padding: 11px 28px; display: flex; justify-content: space-between; align-items: center; }
+.df-l { font-size: 9.5px; font-family: Consolas, 'Courier New', monospace; line-height: 1.6; color: rgba(255,255,255,0.45); }
+.df-r { font-size: 9.5px; color: rgba(255,255,255,0.45); text-align: right; line-height: 1.6; }
+.df-r strong { color: var(--teal-mid); font-weight: 500; }
+
+.divider { border: none; border-top: 1px solid var(--rule-light); margin: 18px 0; }
+
+/* ─── OT CHECKLIST ─── */
+.ot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 8px 0; }
+.ot-card { border: 1px solid var(--rule); padding: 10px 13px; background: var(--bg); }
+.ot-card-hdr { font-size: 8.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--violet); margin-bottom: 7px; border-bottom: 1px solid var(--rule-light); padding-bottom: 4px; }
+.ot-row { display: flex; justify-content: space-between; align-items: baseline; font-size: 11.5px; color: var(--mid); padding: 3px 0; border-bottom: 1px solid var(--rule-light); }
+.ot-row:last-child { border-bottom: none; }
+.ot-val { font-family: Consolas, 'Courier New', monospace; font-size: 11px; font-weight: 600; }
+
+@media (max-width: 580px) {
+  .sgrid { grid-template-columns: 1fr 1fr; }
+  .scell.s4 { grid-column: span 2; }
+  .rec-grid, .ot-grid { grid-template-columns: 1fr; }
+  .sig { grid-template-columns: 1fr; }
+  .sigc { border-right: none; border-bottom: 1px solid var(--rule); }
+  .nav-tabs { overflow-x: auto; }
+  .nav-tab { min-width: 100px; }
+  .agency-hdr { flex-direction: column; gap: 8px; }
+  .doc-footer { flex-direction: column; gap: 6px; }
+}
+</style>
+</head>
+<body>
+
+
+<div class="top-nav">
+  <div class="nav-brand">Brooks <span>Band™</span></div>
+  <div class="nav-tabs">
+    <div class="nav-tab" onclick="show(0)">
+      Special Ed. Teacher
+      <span class="nav-tab-sub">IDEA §300.320</span>
+    </div>
+    <div class="nav-tab" onclick="show(1)">
+      Speech-Language Pathologist
+      <span class="nav-tab-sub">IEP Session Documentation</span>
+    </div>
+    <div class="nav-tab" onclick="show(2)">
+      Occupational Therapist
+      <span class="nav-tab-sub">Sensory · Self-Reg · FAPE</span>
+    </div>
+    <div class="nav-tab active" onclick="show(3)">
+      Live Data Flow
+      <span class="nav-tab-sub">Device → Dashboard → Reports</span>
+    </div>
+  </div>
+</div>
+
+<div class="sample-banner">
+  ⚠  SAMPLE OUTPUT — De-identified. All student names are fictional. No real student data represented. For demonstration purposes only.
+</div>
+
+
+<div class="panel" id="p0">
+<div class="doc">
+  <div class="agency-hdr">
+    <div>
+      <div class="agency-name">Sample County Department of Education</div>
+      <div class="agency-sub">Office of Special Education &amp; Related Services</div>
+    </div>
+    <div class="form-id">Form SE-310-B · IEP Quarterly Progress Report<br>Special Education Teacher · Rev. 2024–25</div>
+  </div>
+  <div class="title-bar bar-teal">
+    <h1>Quarterly IEP Progress Note — Self-Regulation &amp; Voice Awareness Goals</h1>
+    <div class="title-bar-badge">Data Source: Brooks Band™ Wearable Platform</div>
+  </div>
+
+  <div class="fbody">
+    <div class="sgrid">
+      <div class="scell"><div class="fl">Student (De-identified)</div><div class="fv">Student A</div></div>
+      <div class="scell"><div class="fl">Grade</div><div class="fv">2nd</div></div>
+      <div class="scell"><div class="fl">Disability</div><div class="fv">ASD</div></div>
+      <div class="scell"><div class="fl">Report Period</div><div class="fv mono">Q2 · Jan–Mar 2026</div></div>
+      <div class="scell"><div class="fl">SpEd Teacher</div><div class="fv">T. Sample-Test, M.Ed.</div></div>
+      <div class="scell"><div class="fl">IEP Annual Review</div><div class="fv mono">08/15/2026</div></div>
+      <div class="scell"><div class="fl">Reporting Date</div><div class="fv mono">03/07/2026</div></div>
+      <div class="scell"><div class="fl">Data Points This Period</div><div class="fv" style="color:var(--green);font-weight:700;">8 of 9 weeks ✓</div></div>
+      <div class="scell s4"><div class="fl">Data Collection Method</div>
+        <div class="fv sm">Brooks Band™ Wearable — continuous passive sensor (voice volume frequency &amp; duration); auto-exported weekly to IEP dashboard. Supplemented by teacher observation log.
+           <span style="font-family:Consolas,&#39;Courier New&#39;,monospace;font-size:10px;color:var(--teal);background:var(--teal-light);padding:1px 6px;">FERPA-Compliant · No Audio Stored · Research Protocol Registered · IRB approval pertains to device testing only; not FDA clearance or clinical validation</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sh"><div class="snum">1</div><div class="stitle">Present Levels of Academic Achievement &amp; Functional Performance (PLAAFP)</div><div class="lcite">34 CFR §300.320(a)(1)</div></div>
+    <div class="callout">◆  <div><strong>Objective baseline established Week 1 (Jan 6–10, 2026)</strong> — replaces anecdotal teacher estimate with timestamped frequency counts across 4 instructional settings.</div></div>
+    <div class="plafp">
+      At the start of Q2, Student A's voice volume exceeded the self-regulation threshold (above personalized threshold) an average of <strong>14.2 times per 60-minute instructional period</strong>, across four classroom settings. Exceedances were concentrated during transitions (38%) and whole-group instruction (44%). Average exceedance duration was <strong>8.3 seconds</strong>. Student required adult verbal prompt to self-correct in <strong>91% of exceedance events</strong> at baseline. These levels directly affect participation in group instruction and access to the general education curriculum.
+      <div><span class="dtag teal">Objective sensor data · Not teacher estimate · Graphable · Defensible in due process</span></div>
+    </div>
+
+    
+    <div class="sh"><div class="snum">2</div><div class="stitle">Measurable Annual Goal — Q2 Progress</div><div class="lcite">34 CFR §300.320(a)(2)</div></div>
+    <table class="gtable">
+      <thead><tr><th style="width:36%">Annual Goal Statement</th><th style="width:22%">Mastery Criterion</th><th style="width:20%">Measurement</th><th style="width:22%">Q2 Status</th></tr></thead>
+      <tbody><tr>
+        <td>When participating in classroom instruction or group activities, Student A will independently maintain voice volume within the designated self-regulation range (within personalized range), self-correcting within 5 seconds of device feedback, across 4 of 5 consecutive sessions.</td>
+        <td>≥80% self-correction without adult prompt across 5 consecutive sessions by <span class="mono" style="font-size:10px;">06/05/2026</span></td>
+        <td>Brooks Band™ automated event log — frequency count, exceedance duration, self-correction latency. Weekly export.</td>
+        <td><span class="chip g">Making Progress</span><div style="margin-top:5px;font-size:11px;color:var(--green);font-weight:600;">64% self-correction<br>Week 7 (most recent)</div></td>
+      </tr></tbody>
+    </table>
+
+    
+    <div class="sh"><div class="snum">3</div><div class="stitle">Objective Progress Monitoring Data — 8 Data Points</div><div class="lcite">Min. 5–6 graphable pts/period</div></div>
+    <div class="dpanel green">
+      <div class="dphdr green">Brooks Band™ Weekly Export · Student A <span>Auto-generated · Jan 6 – Feb 28, 2026</span></div>
+      <table class="otable">
+        <thead><tr>
+          <th class="green">Week</th><th class="green">Dates</th><th class="green">Exceed/60min</th>
+          <th class="green">Avg Duration</th><th class="green">Self-Correct</th><th class="green">Adult Prompt</th><th class="green">Trend</th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="green">Baseline</td><td class="green">Jan 6–10</td><td class="green">14.2</td><td class="green">8.3s</td><td class="green dn">9%</td><td class="green">91%</td><td class="green dn">— Baseline</td></tr>
+          <tr><td class="green">Wk 1</td><td class="green">Jan 13–17</td><td class="green">13.6</td><td class="green">7.9s</td><td class="green mid-c">18%</td><td class="green">82%</td><td class="green mid-c">▲ +9%</td></tr>
+          <tr><td class="green">Wk 2</td><td class="green">Jan 20–24</td><td class="green">11.8</td><td class="green">7.1s</td><td class="green mid-c">29%</td><td class="green">71%</td><td class="green mid-c">▲ +11%</td></tr>
+          <tr><td class="green">Wk 3</td><td class="green">Jan 27–31</td><td class="green">10.4</td><td class="green">6.5s</td><td class="green mid-c">38%</td><td class="green">62%</td><td class="green mid-c">▲ +9%</td></tr>
+          <tr><td class="green">Wk 4</td><td class="green">Feb 3–7</td><td class="green">9.1</td><td class="green">5.8s</td><td class="green up">47%</td><td class="green">53%</td><td class="green up">▲ +9%</td></tr>
+          <tr><td class="green">Wk 5</td><td class="green">Feb 10–14</td><td class="green">8.7</td><td class="green">5.4s</td><td class="green up">51%</td><td class="green">49%</td><td class="green up">▲ +4%</td></tr>
+          <tr><td class="green">Wk 6</td><td class="green">Feb 17–21</td><td class="green">7.9</td><td class="green">4.9s</td><td class="green up">58%</td><td class="green">42%</td><td class="green up">▲ +7%</td></tr>
+          <tr><td class="green">Wk 7</td><td class="green">Feb 24–28</td><td class="green">7.2</td><td class="green">4.3s</td><td class="green up">64%</td><td class="green">36%</td><td class="green up">▲ +6%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="chart-wrap">
+      <div class="chart-lbl">Self-Correction Rate — Weekly Trend vs. 80% Mastery Goal</div>
+      <div class="goal-lbl teal">← 80% mastery criterion</div>
+      <div class="bar-rows">
+        <div class="brow"><div class="bwk">Baseline</div><div class="btrack"><div class="bfill" style="width:9%;background:#fca5a5;"></div><div class="bline" style="left:80%;background:var(--teal);"></div></div><div class="bpct dn">9%</div></div>
+        <div class="brow"><div class="bwk">Wk 1</div><div class="btrack"><div class="bfill" style="width:18%;background:#fcd34d;"></div><div class="bline" style="left:80%;background:var(--teal);"></div></div><div class="bpct mid-c">18%</div></div>
+        <div class="brow"><div class="bwk">Wk 2</div><div class="btrack"><div class="bfill" style="width:29%;background:#fcd34d;"></div><div class="bline" style="left:80%;background:var(--teal);"></div></div><div class="bpct mid-c">29%</div></div>
+        <div class="brow"><div class="bwk">Wk 3</div><div class="btrack"><div class="bfill" style="width:38%;background:#fcd34d;"></div><div class="bline" style="left:80%;background:var(--teal);"></div></div><div class="bpct mid-c">38%</div></div>
+        <div class="brow"><div class="bwk">Wk 4</div><div class="btrack"><div class="bfill" style="width:47%;background:#86efac;"></div><div class="bline" style="left:80%;background:var(--teal);"></div></div><div class="bpct up">47%</div></div>
+        <div class="brow"><div class="bwk">Wk 5</div><div class="btrack"><div class="bfill" style="width:51%;background:#86efac;"></div><div class="bline" style="left:80%;background:var(--teal);"></div></div><div class="bpct up">51%</div></div>
+        <div class="brow"><div class="bwk">Wk 6</div><div class="btrack"><div class="bfill" style="width:58%;background:#4ade80;"></div><div class="bline" style="left:80%;background:var(--teal);"></div></div><div class="bpct up">58%</div></div>
+        <div class="brow"><div class="bwk">Wk 7</div><div class="btrack"><div class="bfill" style="width:64%;background:#22c55e;"></div><div class="bline" style="left:80%;background:var(--teal);"></div></div><div class="bpct up">64%</div></div>
+      </div>
+      <div class="chart-legend">
+        <span><span class="legend-dot" style="background:var(--teal);"></span> 80% mastery criterion</span>
+        <span><span class="legend-dot" style="background:#22c55e;"></span> Consistent upward trend — on track for annual goal</span>
+      </div>
+    </div>
+
+    
+    <hr class="divider">
+    <div class="sh"><div class="snum">4</div><div class="stitle">Provider Narrative &amp; Instructional Interpretation</div><div class="lcite">§300.324(b) Review &amp; Revision</div></div>
+    <div class="narrative">Student A has demonstrated <strong>consistent, measurable progress</strong> this quarter. Self-correction rate rose from 9% (baseline) to 64% over 7 weeks — a net gain of 55 percentage points — with exceedance frequency declining from 14.2 to 7.2 per hour and average duration falling from 8.3s to 4.3s. <strong>At current trajectory, the 80% mastery criterion is projected to be met in Q3 Weeks 4–5</strong>, placing the student on track for the June 5, 2026 annual goal. Elevated exceedance rates during transitions (2.3 events/transition avg.) suggest a targeted transition protocol for Q3.</div>
+
+    
+    <div class="sh"><div class="snum">5</div><div class="stitle">IEP Team Recommendations</div><div class="lcite">§300.324(b)(1)(ii)(A)</div></div>
+    <div class="rec-grid">
+      <div class="rec-card"><div class="rc-lbl">Goal Status</div><div class="rc-txt"><span class="chip g" style="margin-bottom:5px;display:inline-block;">Sufficient Progress — No Revision Required</span><br>Continue current support strategy. Reconvene if plateau observed 2+ consecutive weeks.</div></div>
+      <div class="rec-card"><div class="rc-lbl">Q3 Adjustment</div><div class="rc-txt">Add OT-designed transition-period self-regulation protocol. Threshold settings unchanged. Data export frequency unchanged (weekly).</div></div>
+      <div class="rec-card"><div class="rc-lbl">Parent Reporting</div><div class="rc-txt">Quarterly progress report transmitted with this form and attached Brooks Band™ data export. Meeting offered: <span class="mono" style="font-size:10px;">03/20/2026</span> or by parent request.</div></div>
+      <div class="rec-card"><div class="rc-lbl">Data Completeness</div><div class="rc-txt">8 of 9 weeks include complete device data. Jan 29 session excluded — device charging gap. Teacher observation log used as supplemental record.</div></div>
+    </div>
+
+    <div class="sig">
+      <div class="sigc"><div class="sig-lbl">Special Education Teacher</div><div class="sig-line"></div><div class="sig-name">T. Sample-Test, M.Ed. · Date: ___________</div></div>
+      <div class="sigc"><div class="sig-lbl">Related Service Provider</div><div class="sig-line"></div><div class="sig-name">A. Demo-Test, COTA · Date: ___________</div></div>
+      <div class="sigc"><div class="sig-lbl">SpEd Director Review</div><div class="sig-line"></div><div class="sig-name">________________________</div></div>
+    </div>
+  </div>
+
+  <div class="doc-footer" style="background:var(--ink);">
+    <div class="df-l">Form SE-310-B · Sample County Dept. of Education<br>FERPA Protected · IEP Team Use Only</div>
+    <div class="df-r">Engagement data generated by <strong>Brooks Band™</strong><br>Sensory Bridges, Inc. · Patent Pending</div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="panel" id="p1">
+<div class="doc">
+  <div class="agency-hdr">
+    <div>
+      <div class="agency-name">Sample County Department of Education</div>
+      <div class="agency-sub">Speech-Language Pathology Services — IEP Progress Documentation</div>
+    </div>
+    <div class="form-id">Form SLP-SE-7 · Session Progress Note<br>ASHA Standards · IDEA Compliant</div>
+  </div>
+  <div class="title-bar bar-blue">
+    <h1>SLP Session Progress Note — IEP Goal Documentation</h1>
+    <div class="title-bar-badge">Data Source: Brooks Band™ · Voice Volume Objective Measure</div>
+  </div>
+
+  <div class="fbody">
+    <div class="sgrid">
+      <div class="scell"><div class="fl">Student (De-identified)</div><div class="fv">Student B</div></div>
+      <div class="scell"><div class="fl">Grade</div><div class="fv">3rd</div></div>
+      <div class="scell"><div class="fl">Disability</div><div class="fv">ASD / Speech-Language Impairment</div></div>
+      <div class="scell"><div class="fl">Session Date</div><div class="fv mono">02/26/2026</div></div>
+      <div class="scell"><div class="fl">Provider</div><div class="fv">M. Demo-Test, M.S., CCC-SLP</div></div>
+      <div class="scell"><div class="fl">ASHA Cert #</div><div class="fv mono">CCC-SLP · #XXXXXX</div></div>
+      <div class="scell"><div class="fl">Service Model</div><div class="fv mono">Individual Pull-Out</div></div>
+      <div class="scell"><div class="fl">IEP Service Status</div><div class="fv" style="color:var(--green);font-weight:600;">Active ✓</div></div>
+      <div class="scell s2"><div class="fl">Service Setting</div><div class="fv sm">Pull-out — Speech Resource Room (30 min individual session per IEP)</div></div>
+      <div class="scell s2"><div class="fl">IEP Service Frequency</div><div class="fv sm">2x/week · 30 min/session · Individual · Per IEP dated 08/15/2025</div></div>
+    </div>
+
+    
+    <div class="sh"><div class="snum">1</div><div class="stitle">IEP Service Documentation — This Session</div><div class="lcite">34 CFR §300.320 · ASHA Documentation Standards</div></div>
+    <div class="callout blue">◆  <div><strong>IEP service documentation:</strong> Services must be (1) authorized on the IEP, (2) provided by or under direction of CCC-SLP, (3) documented with session date, duration, service type, student response, and progress toward IEP goal. All elements auto-generated or confirmed below.</div></div>
+
+    <table class="bill-table">
+      <thead><tr><th>Service Type</th><th>Service Description</th><th>Session Duration</th><th>Setting</th><th>IEP Authorization</th><th>Compliance</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Speech-Language Related Service</td>
+          
+          <td>Related service — speech-language pathology services addressing communication and voice regulation skills — individual session</td>
+          <td>30 min</td>
+          <td>Speech Resource Room</td>
+          <td><span class="chip g">On IEP ✓</span></td>
+          <td><span class="chip g">Compliant ✓</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout blue" style="margin-top:10px;">◆  <div><strong>Service compliance note:</strong> Session frequency does not exceed IEP-authorized service minutes. Consultation time excluded from direct service documentation per ASHA guidance. Session provided directly by CCC-SLP. All data collection compliant with FERPA and IDEA requirements.</div></div>
+
+    
+    <div class="sh"><div class="snum">2</div><div class="stitle">IEP Goal Addressed This Session</div><div class="lcite">34 CFR §300.320(a)(2) · Must match IEP as written</div></div>
+    <table class="gtable">
+      <thead><tr><th style="width:40%">IEP Annual Goal — As Written</th><th style="width:20%">Annual Mastery Criterion</th><th style="width:20%">Short-Term Objective (Q2)</th><th style="width:20%">Session Performance</th></tr></thead>
+      <tbody><tr>
+        <td><strong>Pragmatic Communication / Voice Volume Goal:</strong> Student B will use an appropriate indoor voice volume (within personalized range) during conversational exchanges with peers and adults across structured and unstructured settings, with independent self-monitoring, in 80% of observed opportunities across 5 consecutive sessions.</td>
+        <td>80% independence by <span class="mono" style="font-size:10px;">06/05/2026</span><br>across 5 consecutive sessions</td>
+        <td>By end of Q2: ≥60% self-monitoring without SLP prompt during structured session activities (10-trial probe)</td>
+        <td><span class="chip g">Goal Met</span><div style="margin-top:4px;font-size:11px;color:var(--green);font-weight:600;">7/10 trials (70%)<br>This session</div></td>
+      </tr></tbody>
+    </table>
+
+    
+    <div class="sh"><div class="snum">3</div><div class="stitle">Session Observation Data — Objective Measure (Brooks Band™)</div><div class="lcite">ASHA Documentation Standards · Progress Note Requirements</div></div>
+
+    <div class="dpanel blue">
+      <div class="dphdr blue">Brooks Band™ Session Log — Student B · 02/26/2026 · 9:15–9:45 AM <span>SLP Session · 30 min · Individual</span></div>
+      <table class="otable">
+        <thead><tr>
+          <th class="blue">Trial #</th><th class="blue">Activity</th><th class="blue">Volume Event</th>
+          <th class="blue">Exceedance (dB)</th><th class="blue">Self-Correct (≤5s)</th><th class="blue">SLP Prompt Required</th><th class="blue">Result</th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="blue">1</td><td class="blue">Structured Q&amp;A</td><td class="blue">Yes</td><td class="blue">+6 dB</td><td class="blue up">Yes — 3.1s</td><td class="blue up">No</td><td class="blue up">Pass ✓</td></tr>
+          <tr><td class="blue">2</td><td class="blue">Structured Q&amp;A</td><td class="blue">Yes</td><td class="blue">+4 dB</td><td class="blue up">Yes — 4.7s</td><td class="blue up">No</td><td class="blue up">Pass ✓</td></tr>
+          <tr><td class="blue">3</td><td class="blue">Conversation Role-Play</td><td class="blue">Yes</td><td class="blue">+9 dB</td><td class="blue dn">No — 8.2s</td><td class="blue dn">Yes</td><td class="blue dn">Fail ✗</td></tr>
+          <tr><td class="blue">4</td><td class="blue">Conversation Role-Play</td><td class="blue">Yes</td><td class="blue">+3 dB</td><td class="blue up">Yes — 2.8s</td><td class="blue up">No</td><td class="blue up">Pass ✓</td></tr>
+          <tr><td class="blue">5</td><td class="blue">Peer Script Practice</td><td class="blue">Yes</td><td class="blue">+7 dB</td><td class="blue up">Yes — 3.5s</td><td class="blue up">No</td><td class="blue up">Pass ✓</td></tr>
+          <tr><td class="blue">6</td><td class="blue">Peer Script Practice</td><td class="blue">Yes</td><td class="blue">+11 dB</td><td class="blue dn">No — 10.4s</td><td class="blue dn">Yes</td><td class="blue dn">Fail ✗</td></tr>
+          <tr><td class="blue">7</td><td class="blue">Unstructured Free Talk</td><td class="blue">Yes</td><td class="blue">+5 dB</td><td class="blue up">Yes — 4.1s</td><td class="blue up">No</td><td class="blue up">Pass ✓</td></tr>
+          <tr><td class="blue">8</td><td class="blue">Unstructured Free Talk</td><td class="blue">Yes</td><td class="blue">+8 dB</td><td class="blue up">Yes — 4.9s</td><td class="blue up">No</td><td class="blue up">Pass ✓</td></tr>
+          <tr><td class="blue">9</td><td class="blue">Structured Q&amp;A</td><td class="blue">Yes</td><td class="blue">+6 dB</td><td class="blue mid-c">Yes — 5.0s</td><td class="blue up">No</td><td class="blue up">Pass ✓</td></tr>
+          <tr><td class="blue">10</td><td class="blue">Structured Q&amp;A</td><td class="blue">Yes</td><td class="blue">+4 dB</td><td class="blue up">Yes — 2.6s</td><td class="blue up">No</td><td class="blue up">Pass ✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="background:var(--blue-light);border:1px solid #93c5fd;padding:10px 14px;margin:10px 0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center;">
+      <div><div style="font-size:18px;font-weight:700;color:var(--blue);">70%</div><div style="font-size:9px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;color:var(--sub);">Session Score</div></div>
+      <div><div style="font-size:18px;font-weight:700;color:var(--green);">7/10</div><div style="font-size:9px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;color:var(--sub);">Trials Passed</div></div>
+      <div><div style="font-size:18px;font-weight:700;color:var(--amber);">4.0s</div><div style="font-size:9px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;color:var(--sub);">Avg Self-Correct Latency</div></div>
+      <div><div style="font-size:18px;font-weight:700;color:var(--green);">Q2 Goal Met ✓</div><div style="font-size:9px;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;color:var(--sub);">Criterion: ≥60%</div></div>
+    </div>
+
+    
+    
+    <div class="sh"><div class="snum">4</div><div class="stitle">Provider Narrative — Session Documentation</div><div class="lcite">ASHA Standards · IDEA §300.320 · Signed &amp; Dated</div></div>
+    <div class="narrative">
+      Student B participated in a 30-minute individual speech-language related service session targeting pragmatic communication and voice volume self-regulation (IEP Goal 2). <strong>Student demonstrated 70% independent self-correction across 10 structured trials</strong>, exceeding the Q2 short-term objective criterion of 60% and showing continued progress toward the annual goal of 80%. Self-correction latency averaged 4.0 seconds within the 5-second criterion window. Errors occurred during higher-demand conversational tasks (Role-Play trials 3 and 6), consistent with prior session patterns in less-structured activities.
+      <br><br>
+      
+      
+      <strong>Professional interpretation:</strong> Student B is generalizing volume self-regulation skills developed in structured activities to conversational contexts. The Brooks Band™ haptic feedback supports the student's self-monitoring process. Plan: increase proportion of unstructured conversational tasks in next 4 sessions to promote generalization to peer and classroom settings.
+      <br><br>
+      <strong>Student cooperated</strong> throughout session. No behavioral concerns. Session provided in speech resource room; no classroom time missed beyond scheduled pull-out.
+    </div>
+
+    
+    <div class="sh"><div class="snum">5</div><div class="stitle">Quarterly Progress Summary</div><div class="lcite">ASHA Guidance · Progress reviewed quarterly</div></div>
+    <div class="chart-wrap">
+      <div class="chart-lbl">Session Trial Score Trend — Q2 (Jan–Feb 2026) vs. 80% Annual Goal</div>
+      <div class="goal-lbl blue">← 80% annual mastery goal</div>
+      <div class="bar-rows">
+        <div class="brow"><div class="bwk">Sess 1</div><div class="btrack"><div class="bfill" style="width:30%;background:#93c5fd;"></div><div class="bline" style="left:80%;background:var(--blue);"></div></div><div class="bpct" style="color:var(--blue);">30%</div></div>
+        <div class="brow"><div class="bwk">Sess 2</div><div class="btrack"><div class="bfill" style="width:40%;background:#93c5fd;"></div><div class="bline" style="left:80%;background:var(--blue);"></div></div><div class="bpct" style="color:var(--blue);">40%</div></div>
+        <div class="brow"><div class="bwk">Sess 3</div><div class="btrack"><div class="bfill" style="width:50%;background:#60a5fa;"></div><div class="bline" style="left:80%;background:var(--blue);"></div></div><div class="bpct" style="color:var(--blue);">50%</div></div>
+        <div class="brow"><div class="bwk">Sess 4</div><div class="btrack"><div class="bfill" style="width:55%;background:#60a5fa;"></div><div class="bline" style="left:80%;background:var(--blue);"></div></div><div class="bpct" style="color:var(--blue);">55%</div></div>
+        <div class="brow"><div class="bwk">Sess 5</div><div class="btrack"><div class="bfill" style="width:60%;background:#3b82f6;"></div><div class="bline" style="left:80%;background:var(--blue);"></div></div><div class="bpct" style="color:var(--blue);">60%</div></div>
+        <div class="brow"><div class="bwk">Sess 6</div><div class="btrack"><div class="bfill" style="width:65%;background:#2563eb;"></div><div class="bline" style="left:80%;background:var(--blue);"></div></div><div class="bpct" style="color:var(--blue);">65%</div></div>
+        <div class="brow"><div class="bwk">Sess 7</div><div class="btrack"><div class="bfill" style="width:70%;background:#1d4ed8;"></div><div class="bline" style="left:80%;background:var(--blue);"></div></div><div class="bpct" style="color:var(--blue);">70%</div></div>
+      </div>
+    </div>
+
+    <div class="sig">
+      <div class="sigc"><div class="sig-lbl">Speech-Language Pathologist (CCC-SLP)</div><div class="sig-line"></div><div class="sig-name">M. Demo-Test, M.S., CCC-SLP · Date: _______</div></div>
+      <div class="sigc"><div class="sig-lbl">IEP Service Provider Signature</div><div class="sig-line"></div><div class="sig-name">Same as above</div></div>
+      <div class="sigc"><div class="sig-lbl">SpEd Director / IEP Review</div><div class="sig-line"></div><div class="sig-name">________________________</div></div>
+    </div>
+  </div>
+
+  
+  <div style="background:#dbeafe;border-top:1px solid #93c5fd;padding:8px 28px;font-size:10.5px;color:var(--blue);"><strong>Documentation Disclaimer:</strong> This sample demonstrates how the platform supports educator and provider documentation workflows. It does not constitute a billing document. Medicaid billing compliance is the responsibility of the billing provider and the employing institution.</div>
+  <div class="doc-footer" style="background:var(--blue);">
+    <div class="df-l">Form SLP-SE-7 · Sample County DOE<br>FERPA Protected · IEP Service Documentation</div>
+    <div class="df-r">Voice data generated by <strong>Brooks Band™</strong><br>Sensory Bridges, Inc. · Patent Pending</div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="panel" id="p2">
+<div class="doc">
+  <div class="agency-hdr">
+    <div>
+      <div class="agency-name">Sample County Department of Education</div>
+      <div class="agency-sub">Occupational Therapy — Related Services Documentation</div>
+    </div>
+    <div class="form-id">Form OT-SE-22 · IEP Progress Note<br>School-Based OT · IDEA Related Service · Rev. 2024–25</div>
+  </div>
+  
+  <div class="title-bar bar-violet">
+    <h1>OT Quarterly Progress Note — Sensory Self-Regulation &amp; Voice Regulation</h1>
+    
+    <div class="title-bar-badge">Data Source: Brooks Band™ · Body Awareness + Voice Self-Regulation Measure</div>
+  </div>
+
+  <div class="fbody">
+    <div class="sgrid">
+      <div class="scell"><div class="fl">Student (De-identified)</div><div class="fv">Student C</div></div>
+      <div class="scell"><div class="fl">Grade</div><div class="fv">1st</div></div>
+      
+      <div class="scell"><div class="fl">Disability</div><div class="fv">ASD / Other Health Impairment</div></div>
+      <div class="scell"><div class="fl">Report Period</div><div class="fv mono">Q2 · Jan–Mar 2026</div></div>
+      <div class="scell"><div class="fl">OT Provider</div><div class="fv">A. Demo-Test, COTA</div></div>
+      <div class="scell"><div class="fl">Supervising OTR</div><div class="fv">L. Demo-Test, OTR/L</div></div>
+      <div class="scell"><div class="fl">IEP Service Freq.</div><div class="fv sm">2x/week · 30 min · Direct + Consult</div></div>
+      <div class="scell"><div class="fl">Annual Review Date</div><div class="fv mono">08/15/2026</div></div>
+      <div class="scell s4"><div class="fl">Frameworks Applied</div><div class="fv sm">
+        
+        Sensory Integration &amp; Praxis (Ayres) · Alert Program (Williams &amp; Shellenberger) · Zones of Regulation (Kuypers) · Body Awareness Curriculum (Craig)
+         <span style="font-family:Consolas,&#39;Courier New&#39;,monospace;font-size:10px;color:var(--violet);background:var(--violet-light);padding:1px 6px;">Research Protocol Registered · IRB approval pertains to device testing only; not FDA clearance · FERPA Compliant</span>
+      </div></div>
+    </div>
+
+    
+    <div class="sh"><div class="snum">1</div><div class="stitle">OT Present Levels — Sensory Processing &amp; Functional Performance</div><div class="lcite">34 CFR §300.320(a)(1) · FAPE Functional Basis</div></div>
+    <div class="callout violet">◆  <div><strong>OT Evaluation Basis (Aug 2025):</strong> Sensory Profile-2 (SP-2) indicated significant differences in auditory sensitivity and sensory seeking behaviors. Evaluation identified voice volume dysregulation as a primary barrier to classroom participation and peer interaction. Brooks Band™ baseline data provides ongoing objective measurement of the functional behavior identified in the SP-2.</div></div>
+
+    <div class="plafp">
+      
+      At Q2 baseline, Student C demonstrated difficulty modulating sensory activity and voice volume in response to environmental demands. Brooks Band™ monitoring across Q2 recorded an average of <strong>11.8 voice regulation exceedances per 60-minute period</strong>, with exceedance duration averaging <strong>9.6 seconds</strong>. Student showed limited body awareness — required adult naming of body state in <strong>88% of dysregulation events</strong> at baseline. Behaviors associated with elevated sensory activity (increased motor activity, voice volume escalation) were most frequent during sensory-stimulating environments (cafeteria, gymnasium, transitions). These present levels directly limit Student C's ability to participate in group instruction and regulate behavior in the least restrictive environment.
+      
+      <div><span class="dtag violet">Sensor data corroborates SP-2 findings · Functional baseline for OT goals · Graphable quarterly</span></div>
+    </div>
+
+    
+    
+    <div class="sh"><div class="snum">2</div><div class="stitle">OT Domains Measured This Quarter — SMART Goal Progress</div><div class="lcite">IDEA Related Service · Must enable FAPE</div></div>
+
+    <div class="ot-grid">
+      
+      <div class="ot-card">
+        <div class="ot-card-hdr">Domain 1 · Self-Regulation Awareness (Voice Volume)</div>
+        <div class="ot-row"><span>Baseline exceedances/hr</span><span class="ot-val dn">11.8</span></div>
+        <div class="ot-row"><span>Week 7 exceedances/hr</span><span class="ot-val up">5.9</span></div>
+        <div class="ot-row"><span>Baseline self-correct rate</span><span class="ot-val dn">12%</span></div>
+        <div class="ot-row"><span>Week 7 self-correct rate</span><span class="ot-val up">61%</span></div>
+        <div class="ot-row"><span>Adult body-state prompt needed</span><span class="ot-val mid-c">48% ↓ from 88%</span></div>
+        <div class="ot-row"><span>Q2 Goal Criterion (60%)</span><span class="ot-val up">MET ✓</span></div>
+      </div>
+      
+      <div class="ot-card">
+        <div class="ot-card-hdr">Domain 2 · Body Awareness</div>
+        <div class="ot-row"><span>Self-id of "loud body" baseline</span><span class="ot-val dn">1/5 trials</span></div>
+        <div class="ot-row"><span>Self-id of "loud body" Week 7</span><span class="ot-val up">3/5 trials</span></div>
+        <div class="ot-row"><span>Uses Zones language unprompted</span><span class="ot-val mid-c">Emerging</span></div>
+        <div class="ot-row"><span>Requests sensory break independently</span><span class="ot-val mid-c">2/5 trials</span></div>
+        <div class="ot-row"><span>Body-state labeling accuracy</span><span class="ot-val mid-c">60%</span></div>
+        <div class="ot-row"><span>Q2 Goal Criterion (50%)</span><span class="ot-val up">MET ✓</span></div>
+      </div>
+      <div class="ot-card">
+        <div class="ot-card-hdr">Domain 3 · Sensory Seeking / On-Task</div>
+        <div class="ot-row"><span>Baseline on-task duration</span><span class="ot-val dn">4.2 min</span></div>
+        <div class="ot-row"><span>Week 7 on-task duration</span><span class="ot-val up">9.1 min</span></div>
+        <div class="ot-row"><span>Fidget tool use effectiveness</span><span class="ot-val mid-c">Moderate</span></div>
+        <div class="ot-row"><span>Transition dysregulation events/day</span><span class="ot-val mid-c">3.1 ↓ from 5.8</span></div>
+        <div class="ot-row"><span>Sensory break return-to-task ≤5min</span><span class="ot-val up">4/5 sessions</span></div>
+        <div class="ot-row"><span>Q2 Goal (7 min on-task)</span><span class="ot-val up">MET ✓</span></div>
+      </div>
+      <div class="ot-card">
+        <div class="ot-card-hdr">Domain 4 · Classroom Participation</div>
+        <div class="ot-row"><span>Peer interaction disruptions/hr</span><span class="ot-val mid-c">2.4 ↓ from 6.1</span></div>
+        <div class="ot-row"><span>Adult redirect frequency/hr</span><span class="ot-val up">1.8 ↓ from 7.2</span></div>
+        <div class="ot-row"><span>Independent strategy use in Gen Ed</span><span class="ot-val mid-c">3/5 observations</span></div>
+        <div class="ot-row"><span>Teacher report: "manages better"</span><span class="ot-val up">Yes — all 7 wks</span></div>
+        <div class="ot-row"><span>Inclusion time maintained</span><span class="ot-val up">100% of IEP minutes</span></div>
+        <div class="ot-row"><span>LRE compliance</span><span class="ot-val up">Maintained ✓</span></div>
+      </div>
+    </div>
+
+    
+    
+    <div class="sh"><div class="snum">3</div><div class="stitle">Objective Weekly Data — Brooks Band™ Export (OT Use)</div><div class="lcite">Sensory Integration · Alert Program · Body Awareness</div></div>
+    <div class="dpanel violet">
+      <div class="dphdr violet">Brooks Band™ OT Data Export · Student C · Q2 2026 <span>Auto-generated · Jan 6 – Feb 28, 2026</span></div>
+      <table class="otable">
+        <thead><tr>
+          <th class="violet">Week</th><th class="violet">Exceed/hr</th><th class="violet">Avg Duration</th>
+          
+          <th class="violet">Self-Correct</th><th class="violet">Body-State ID</th><th class="violet">On-Task (min)</th><th class="violet">Adult Redirects/hr</th>
+        </tr></thead>
+        <tbody>
+          <tr><td class="violet">Baseline</td><td class="violet dn">11.8</td><td class="violet dn">9.6s</td><td class="violet dn">12%</td><td class="violet dn">20%</td><td class="violet dn">4.2</td><td class="violet dn">7.2</td></tr>
+          <tr><td class="violet">Wk 1</td><td class="violet">10.9</td><td class="violet">8.8s</td><td class="violet mid-c">22%</td><td class="violet mid-c">30%</td><td class="violet">5.1</td><td class="violet">6.4</td></tr>
+          <tr><td class="violet">Wk 2</td><td class="violet">9.7</td><td class="violet">8.1s</td><td class="violet mid-c">31%</td><td class="violet mid-c">35%</td><td class="violet">6.0</td><td class="violet">5.8</td></tr>
+          <tr><td class="violet">Wk 3</td><td class="violet">8.8</td><td class="violet">7.2s</td><td class="violet mid-c">40%</td><td class="violet mid-c">42%</td><td class="violet">6.9</td><td class="violet">4.9</td></tr>
+          <tr><td class="violet">Wk 4</td><td class="violet">7.9</td><td class="violet">6.5s</td><td class="violet up">48%</td><td class="violet up">50%</td><td class="violet up">7.8</td><td class="violet up">3.8</td></tr>
+          <tr><td class="violet">Wk 5</td><td class="violet">7.1</td><td class="violet">5.9s</td><td class="violet up">54%</td><td class="violet up">55%</td><td class="violet up">8.4</td><td class="violet up">2.9</td></tr>
+          <tr><td class="violet">Wk 6</td><td class="violet">6.4</td><td class="violet">5.2s</td><td class="violet up">58%</td><td class="violet up">58%</td><td class="violet up">8.8</td><td class="violet up">2.3</td></tr>
+          <tr><td class="violet">Wk 7</td><td class="violet up">5.9</td><td class="violet up">4.6s</td><td class="violet up">61%</td><td class="violet up">60%</td><td class="violet up">9.1</td><td class="violet up">1.8</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    
+    <hr class="divider">
+    
+    
+    <div class="sh"><div class="snum">4</div><div class="stitle">OT Provider Narrative &amp; Sensory Support Recommendations</div><div class="lcite">§300.324(b) · FAPE Basis</div></div>
+    <div class="narrative">
+      
+      Student C demonstrated measurable progress across all four OT domains this quarter. <strong>Voice self-regulation awareness</strong> (as measured by Brooks Band™) improved from a baseline self-correction rate of 12% to 61% — with exceedances per hour declining from 11.8 to 5.9, directly supporting increased classroom participation. <strong>Body awareness</strong> showed meaningful development: body-state identification accuracy rose from 20% to 60%, meeting the Q2 criterion of 50%. Student is beginning to use Zones language unprompted in approximately 40% of dysregulation events.
+      <br><br>
+      <strong>On-task duration</strong> increased from 4.2 to 9.1 minutes, exceeding the Q2 criterion of 7 minutes. Adult redirects declined from 7.2 to 1.8 per hour — a 75% reduction — indicating that sensory regulation support is generalizing to the classroom without ongoing adult mediation.
+      <br><br>
+      <strong>Sensory support update for Q3:</strong> Add proprioceptive input protocol at transitions (wall push-ups, resistance band at chair). Continue haptic feedback via Brooks Band™ as primary self-monitoring cue. Introduce self-selected sensory break requesting with visual menu. Goal: independent strategy use in 4/5 classroom observations by end of Q3.
+    </div>
+
+    
+    <div class="sh"><div class="snum">5</div><div class="stitle">OT Team Recommendations &amp; IEP Implications</div><div class="lcite">§300.320(a)(4) · Assistive Technology &amp; Supplementary Aids</div></div>
+    <div class="rec-grid">
+      <div class="rec-card"><div class="rc-lbl">IEP Goal Status</div><div class="rc-txt"><span class="chip" style="background:var(--violet-light);color:var(--violet);margin-bottom:5px;display:inline-block;">All 3 Q2 OT Objectives Met</span><br>Domains 1–3 criteria achieved. Recommend advancing Q3 criteria. No goal revision required at annual review if trajectory continues.</div></div>
+      
+      <div class="rec-card"><div class="rc-lbl">Assistive Technology Device (IEP § 300.5)</div><div class="rc-txt">Brooks Band™ documented as assistive technology device (34 C.F.R. § 300.5). Recommend formalizing in IEP as AT device for self-regulation support. Enables reduction in 1:1 paraprofessional prompting.</div></div>
+      <div class="rec-card"><div class="rc-lbl">LRE &amp; Inclusion Impact</div><div class="rc-txt">All inclusion minutes maintained. Peer interaction disruptions reduced 61%. Student is increasingly able to access general education without adult mediation — directly supporting LRE compliance and FAPE.</div></div>
+      <div class="rec-card"><div class="rc-lbl">Supervising OTR Review</div><div class="rc-txt">L. Demo-Test, OTR/L reviewed all Q2 session notes and Brooks Band™ data exports. COTA services confirmed appropriate and consistent with OTR treatment plan. No modifications to service model required.</div></div>
+    </div>
+
+    <div class="sig">
+      <div class="sigc"><div class="sig-lbl">COTA (Direct Service Provider)</div><div class="sig-line"></div><div class="sig-name">A. Demo-Test, COTA · Date: ___________</div></div>
+      <div class="sigc"><div class="sig-lbl">Supervising OTR/L</div><div class="sig-line"></div><div class="sig-name">L. Demo-Test, OTR/L · Date: ___________</div></div>
+      <div class="sigc"><div class="sig-lbl">SpEd Director / IEP Review</div><div class="sig-line"></div><div class="sig-name">________________________</div></div>
+    </div>
+  </div>
+
+  
+  <div style="background:#ede9fe;border-top:1px solid #c4b5fd;padding:8px 28px;font-size:10.5px;color:var(--violet);"><strong>Documentation Disclaimer:</strong> This sample demonstrates how the platform supports educator and provider documentation workflows. It does not constitute a billing document. Medicaid billing compliance is the responsibility of the billing provider and the employing institution.</div>
+  <div class="doc-footer" style="background:var(--violet);">
+    <div class="df-l">Form OT-SE-22 · Sample County DOE<br>FERPA Protected · IDEA Related Service Documentation</div>
+    
+    <div class="df-r">Sensory &amp; engagement data by <strong>Brooks Band™</strong><br>Sensory Bridges, Inc. · Patent Pending</div>
+  </div>
+</div>
+</div>
+
+
+<div class="panel active" id="p3">
+<div class="doc">
+  <div class="agency-hdr">
+    <div>
+      <div class="agency-name">Brooks Band™ — Data Flow Demonstration</div>
+      <div class="agency-sub">How sensor data becomes compliant documentation for each authorized party</div>
+    </div>
+    <div class="form-id">Interactive Demo · No real student data<br>FERPA · COPPA · IDEA Compliant Architecture</div>
+  </div>
+  <div class="title-bar bar-teal">
+    <h1>Live: Device → Processing → Role-Based Distribution</h1>
+    <div class="title-bar-badge">Privacy-by-Design · No Audio Recorded</div>
+  </div>
+
+  <div class="fbody">
+    <div class="callout">◆ <div><strong>This demonstration shows how a single voice volume event is captured, processed, and distributed to each authorized party based on their role and consent status.</strong> Press "Start Event" to watch the data flow in real time. No real student data is used.</div></div>
+
+    <div style="text-align:center;margin:20px 0;">
+      <button id="startBtn" onclick="startDemo()" style="background: var(--teal); color: white; border: none; padding: 12px 32px; font-size: 14px; font-weight: 600; border-radius: 100px; cursor: pointer; font-family: system-ui; letter-spacing: 0.03em; display: inline-block;">▶ Start Voice Event</button>
+      <button id="resetBtn" onclick="resetDemo()" style="background: var(--rule-light); color: var(--sub); border: 1px solid var(--rule); padding: 12px 24px; font-size: 13px; font-weight: 500; border-radius: 100px; cursor: pointer; font-family: system-ui; margin-left: 10px; display: none;">Reset</button>
+    </div>
+
+    
+    <div class="demo-step" id="ds1" style="opacity: 1; transition: 0.6s;">
+      <div class="sh"><div class="snum">1</div><div class="stitle">Device Sensor Capture</div><div class="lcite">On-wrist · Real-time · No audio stored</div></div>
+      <div style="background:var(--bg);border:1px solid var(--rule);padding:16px 20px;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px;text-align:center;">
+        <div><div style="font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--sub);margin-bottom:4px;">Voice Volume</div><div id="dv1" style="font-size: 22px; font-weight: 700; color: var(--red); font-family: Consolas, monospace;">78 dB</div></div>
+        <div><div style="font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--sub);margin-bottom:4px;">Threshold Status</div><div id="dv2" style="font-size: 14px; font-weight: 600; color: var(--red);">EXCEEDED</div></div>
+        <div><div style="font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--sub);margin-bottom:4px;">Timestamp</div><div id="dv3" style="font-size:13px;font-weight:500;color:var(--sub);font-family:Consolas,monospace;">2:46:19 PM</div></div>
+        <div><div style="font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--sub);margin-bottom:4px;">Audio Recorded</div><div id="dv4" style="font-size:14px;font-weight:700;color:var(--sub);" title="No audio content captured — decibel level only"><span style="color:var(--green);font-weight:700;">NONE ✓</span></div></div>
+      </div>
+    </div>
+
+    
+    <div class="demo-step" id="ds2" style="opacity: 1; transition: 0.6s; margin-top: 20px;">
+      <div class="sh"><div class="snum">2</div><div class="stitle">On-Device Processing — Patented Architecture</div><div class="lcite">Encrypted · On-device only · Patent Pending</div></div>
+      <div style="background:var(--bg);border:1px solid var(--rule);padding:16px 20px;">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;text-align:center;">
+          <div><div style="font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--sub);margin-bottom:4px;">System State</div><div id="dv5" style="font-size: 14px; font-weight: 600; color: var(--green);">Cooldown</div></div>
+          <div><div style="font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--sub);margin-bottom:4px;">Haptic Feedback</div><div id="dv6" style="font-size: 14px; font-weight: 600; color: var(--green);">Delivered ✓</div></div>
+          <div><div style="font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--sub);margin-bottom:4px;">Event Logged</div><div id="dv7" style="font-size: 14px; font-weight: 600; color: var(--green);">Complete ✓</div></div>
+        </div>
+        <div style="margin-top:12px;padding:8px 12px;background:var(--teal-light);border-left:3px solid var(--teal);font-size:11px;color:var(--teal);" id="dv8"><strong>Event detected:</strong> Voice volume exceeded personalized threshold. Haptic feedback delivered to wrist. System monitoring for self-correction response. <strong>No audio recorded at any point.</strong></div>
+      </div>
+    </div>
+
+    
+    <div class="demo-step" id="ds3" style="opacity: 1; transition: 0.6s; margin-top: 20px;">
+      <div class="sh"><div class="snum">3</div><div class="stitle">Self-Correction Detection</div><div class="lcite">Measures response · Key IEP metric</div></div>
+      <div style="background:var(--bg);border:1px solid var(--rule);padding:16px 20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;text-align:center;">
+        <div><div style="font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--sub);margin-bottom:4px;">Post-Alert Volume</div><div id="dv9" style="font-size: 22px; font-weight: 700; color: var(--green); font-family: Consolas, monospace;">68 dB</div></div>
+        <div><div style="font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--sub);margin-bottom:4px;">Self-Corrected?</div><div id="dv10" style="font-size:14px;font-weight:600;color:var(--sub);"><span style="color:var(--green);">YES ✓</span></div></div>
+        <div><div style="font-size:9px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--sub);margin-bottom:4px;">Latency</div><div id="dv11" style="font-size: 22px; font-weight: 700; color: var(--green); font-family: Consolas, monospace;">3.2s</div></div>
+      </div>
+    </div>
+
+    
+    <div class="demo-step" id="ds4" style="opacity: 1; transition: 0.6s; margin-top: 20px;">
+      <div class="sh"><div class="snum">4</div><div class="stitle">Encrypted Transmission to Dashboard</div><div class="lcite">AES-256 · TLS 1.3 · U.S. servers only</div></div>
+      <div style="background:var(--bg);border:1px solid var(--rule);padding:16px 20px;">
+        <div id="dv12" style="font-size:12px;color:var(--sub);font-family:Consolas,monospace;line-height:1.8;">&gt; Encrypting event packet... AES-256<br>&gt; Packet: {timestamp, dB_level, duration, self_correct: true, latency: 3.2s}<br>&gt; Transmitting via TLS 1.3 to U.S. server...<br>&gt; Student identifier: encrypted token (no PII in transit)<br>&gt; Delivery confirmed ✓<br>&gt; Event stored in FERPA-compliant dashboard<br></div>
+      </div>
+    </div>
+
+    
+    <div class="demo-step" id="ds5" style="opacity: 1; transition: 0.6s; margin-top: 20px;">
+      <div class="sh"><div class="snum">5</div><div class="stitle">Role-Based Data Distribution — Consent-Gated</div><div class="lcite">FERPA §99.31 · COPPA §312.5 · IDEA §300.613</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div id="role1" style="border: 1px solid var(--rule); padding: 14px; background: var(--bg); opacity: 1; transition: 0.5s;">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal);margin-bottom:6px;">● Special Education Teacher</div>
+          <div style="font-size:11px;color:var(--mid);line-height:1.6;">Receives: Exceedance count, self-correction rate, weekly trend, IEP goal progress status.<br><strong style="color:var(--teal);">Consent: IEP Data Collection (Consent 1) ✓</strong></div>
+        </div>
+        <div id="role2" style="border: 1px solid var(--rule); padding: 14px; background: var(--bg); opacity: 1; transition: 0.5s;">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--blue);margin-bottom:6px;">● Speech-Language Pathologist</div>
+          <div style="font-size:11px;color:var(--mid);line-height:1.6;">Receives: Trial-level session data, self-correction latency, session score, quarterly trend.<br><strong style="color:var(--blue);">Consent: IEP Data Collection (Consent 1) ✓</strong></div>
+        </div>
+        <div id="role3" style="border: 1px solid var(--rule); padding: 14px; background: var(--bg); opacity: 1; transition: 0.5s;">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--violet);margin-bottom:6px;">● Occupational Therapist</div>
+          
+          <div style="font-size:11px;color:var(--mid);line-height:1.6;">Receives: Self-regulation awareness data, body awareness metrics, on-task duration, sensory domain scores.<br><strong style="color:var(--violet);">Consent: IEP Data Collection (Consent 1) ✓</strong></div>
+        </div>
+        <div id="role4" style="border: 1px solid var(--rule); padding: 14px; background: var(--bg); opacity: 1; transition: 0.5s;">
+          <div style="font-size:9px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);margin-bottom:6px;">● Parent / Guardian</div>
+          <div style="font-size:11px;color:var(--mid);line-height:1.6;">Receives: Weekly summary, progress toward goal, positive trend narrative. No raw event data.<br><strong style="color:var(--amber);">Consent: IEP Data Collection (Consent 1) ✓</strong></div>
+        </div>
+      </div>
+
+      
+      <div style="margin-top:10px;padding:10px 14px;background:#fef3c7;border-left:3px solid #d97706;font-size:11px;color:#92400e;">
+        <strong>⚠ FERPA Re-Disclosure Prohibition (34 C.F.R. § 99.33):</strong> All parties receiving student data under the school official exception are bound by FERPA's re-disclosure restriction. Data may not be shared beyond authorized recipients without written parental consent.
+      </div>
+      <div style="margin-top:8px;padding:10px 14px;background:var(--red-light);border-left:3px solid var(--red);font-size:11px;color:var(--red);">
+        <strong>⚠ Consent gate:</strong> Each party only receives data authorized by their specific consent. Revoking consent immediately stops data flow to that party. Third-party disclosures require separate parental consent under COPPA 2025 §312.5(a)(1).
+      </div>
+    </div>
+
+    
+    <div class="demo-step" id="ds6" style="opacity: 1; transition: 0.6s; margin-top: 20px;">
+      <div class="sh"><div class="snum">6</div><div class="stitle">Automated Report Generation</div><div class="lcite">IEP-ready · 504-ready · BIP-ready</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+        <div id="rpt1" style="border: 1px solid var(--rule); padding: 14px; text-align: center; background: white; opacity: 1; transition: 0.5s;">
+          <div style="font-size:28px;margin-bottom:6px;">📄</div>
+          <div style="font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--teal);">IEP Progress Note</div>
+          <div style="font-size:10px;color:var(--sub);margin-top:4px;">Auto-formatted for quarterly reporting</div>
+        </div>
+        <div id="rpt2" style="border: 1px solid var(--rule); padding: 14px; text-align: center; background: white; opacity: 1; transition: 0.5s;">
+          <div style="font-size:28px;margin-bottom:6px;">📈</div>
+          <div style="font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--blue);">SLP Session Note</div>
+          <div style="font-size:10px;color:var(--sub);margin-top:4px;">Trial data with ASHA documentation</div>
+        </div>
+        <div id="rpt3" style="border: 1px solid var(--rule); padding: 14px; text-align: center; background: white; opacity: 1; transition: 0.5s;">
+          <div style="font-size:28px;margin-bottom:6px;">📋</div>
+          <div style="font-size:10px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--violet);">OT Sensory Report</div>
+          <div style="font-size:10px;color:var(--sub);margin-top:4px;">Self-regulation, body awareness, on-task</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="doc-footer" style="background:var(--ink);">
+    <div class="df-l">Interactive Demonstration · No Real Student Data<br>FERPA · COPPA · IDEA Compliant Architecture</div>
+    
+    <div class="df-r">Data architecture by <strong>Brooks Band™</strong><br>Sensory Bridges, Inc. · Patent Pending</div>
+  </div>
+</div>
+</div>
+
+
+<div style="max-width:920px;margin:16px auto 0;background:#fef3c7;border:1px solid #d97706;padding:11px 18px;font-size:10.5px;color:#78350f;line-height:1.7;">
+  <strong>FDA Disclaimer:</strong> The Brooks Band™ is a general wellness and assistive technology device. It is not a medical device. Statements about the Brooks Band™ have not been evaluated by the Food and Drug Administration. The Brooks Band™ is not intended to diagnose, treat, cure, or prevent any disease or medical condition. Data collected by the Brooks Band™ is for educational and self-regulation awareness purposes only.
+  &nbsp;|&nbsp; <strong>© 2026 Sensory Bridges, Inc. All rights reserved.</strong>
+  &nbsp;|&nbsp; <a href="file:///C:/privacy" style="color:#78350f;text-decoration:underline;">Privacy</a>
+  &nbsp;|&nbsp; <a href="file:///C:/terms" style="color:#78350f;text-decoration:underline;">Terms</a>
+  &nbsp;|&nbsp; <a href="file:///C:/coppa-notice" style="color:#78350f;text-decoration:underline;">COPPA Notice</a>
+  &nbsp;|&nbsp; <a href="file:///C:/accessibility" style="color:#78350f;text-decoration:underline;">Accessibility</a>
+  &nbsp;|&nbsp; Patent Pending
+</div>
+
+<script>
+function show(idx) {
+  document.querySelectorAll('.panel').forEach((p,i) => p.classList.toggle('active', i===idx));
+  document.querySelectorAll('.nav-tab').forEach((t,i) => t.classList.toggle('active', i===idx));
+}
+
+function startDemo() {
+  document.getElementById('startBtn').style.display = 'none';
+  document.getElementById('resetBtn').style.display = 'inline-block';
+  var steps = [
+    function() {
+      document.getElementById('ds1').style.opacity = '1';
+      document.getElementById('dv1').textContent = '...';
+      document.getElementById('dv1').style.color = 'var(--amber)';
+      var rising = [62, 65, 68, 71, 74, 76, 78];
+      var i = 0;
+      var iv = setInterval(function() {
+        if (i < rising.length) {
+          document.getElementById('dv1').textContent = rising[i] + ' dB';
+          if (rising[i] >= 75) {
+            document.getElementById('dv1').style.color = 'var(--red)';
+            document.getElementById('dv2').textContent = 'EXCEEDED';
+            document.getElementById('dv2').style.color = 'var(--red)';
+          } else {
+            document.getElementById('dv2').textContent = 'Monitoring...';
+            document.getElementById('dv2').style.color = 'var(--amber)';
+          }
+          i++;
+        } else { clearInterval(iv); }
+      }, 300);
+      var now = new Date();
+      document.getElementById('dv3').textContent = now.toLocaleTimeString();
+      document.getElementById('dv4').innerHTML = '<span style="color:var(--green);font-weight:700;">NONE &#10003;</span>';
+      document.getElementById('dv4').title = 'No audio content captured — decibel level only';
+    },
+    function() {
+      document.getElementById('ds2').style.opacity = '1';
+      document.getElementById('dv5').textContent = 'Alert State';
+      document.getElementById('dv5').style.color = 'var(--red)';
+      document.getElementById('dv6').textContent = 'Delivered &#10003;';
+      document.getElementById('dv6').style.color = 'var(--green)';
+      document.getElementById('dv7').textContent = 'Logging...';
+      document.getElementById('dv7').style.color = 'var(--amber)';
+      document.getElementById('dv8').innerHTML = '<strong>Event detected:</strong> Voice volume exceeded personalized threshold. Haptic feedback delivered to wrist. System monitoring for self-correction response. <strong>No audio recorded at any point.</strong>';
+    },
+    function() {
+      document.getElementById('ds3').style.opacity = '1';
+      document.getElementById('dv9').textContent = '68 dB';
+      document.getElementById('dv9').style.color = 'var(--green)';
+      document.getElementById('dv10').innerHTML = '<span style="color:var(--green);">YES &#10003;</span>';
+      document.getElementById('dv11').textContent = '3.2s';
+      document.getElementById('dv11').style.color = 'var(--green)';
+      document.getElementById('dv5').textContent = 'Cooldown';
+      document.getElementById('dv5').style.color = 'var(--green)';
+      document.getElementById('dv7').textContent = 'Complete &#10003;';
+      document.getElementById('dv7').style.color = 'var(--green)';
+    },
+    function() {
+      document.getElementById('ds4').style.opacity = '1';
+      var lines = [
+        '> Encrypting event packet... AES-256',
+        '> Packet: {timestamp, dB_level, duration, self_correct: true, latency: 3.2s}',
+        '> Transmitting via TLS 1.3 to U.S. server...',
+        '> Student identifier: encrypted token (no PII in transit)',
+        '> Delivery confirmed &#10003;',
+        '> Event stored in FERPA-compliant dashboard'
+      ];
+      var el = document.getElementById('dv12');
+      el.textContent = '';
+      var j = 0;
+      var iv2 = setInterval(function() {
+        if (j < lines.length) {
+          el.innerHTML += lines[j] + '<br/>';
+          j++;
+        } else { clearInterval(iv2); }
+      }, 400);
+    },
+    function() {
+      document.getElementById('ds5').style.opacity = '1';
+      var roles = ['role1','role2','role3','role4'];
+      roles.forEach(function(r, i) {
+        setTimeout(function() {
+          document.getElementById(r).style.opacity = '1';
+          document.getElementById(r).style.borderColor = 'var(--teal)';
+        }, i * 500);
+      });
+    },
+    function() {
+      document.getElementById('ds6').style.opacity = '1';
+      var rpts = ['rpt1','rpt2','rpt3'];
+      rpts.forEach(function(r, i) {
+        setTimeout(function() {
+          document.getElementById(r).style.opacity = '1';
+          document.getElementById(r).style.borderColor = 'var(--teal)';
+          document.getElementById(r).style.background = 'white';
+        }, i * 600);
+      });
+    }
+  ];
+  steps.forEach(function(fn, i) {
+    setTimeout(fn, i * 2500);
+  });
+}
+
+function resetDemo() {
+  ['ds1','ds2','ds3','ds4','ds5','ds6'].forEach(function(id) {
+    document.getElementById(id).style.opacity = '0.25';
+  });
+  ['role1','role2','role3','role4'].forEach(function(id) {
+    document.getElementById(id).style.opacity = '0.3';
+    document.getElementById(id).style.borderColor = 'var(--rule)';
+  });
+  ['rpt1','rpt2','rpt3'].forEach(function(id) {
+    document.getElementById(id).style.opacity = '0.3';
+    document.getElementById(id).style.borderColor = 'var(--rule)';
+    document.getElementById(id).style.background = 'var(--bg)';
+  });
+  document.getElementById('dv1').textContent = '\u2014';
+  document.getElementById('dv1').style.color = 'var(--sub)';
+  document.getElementById('dv2').textContent = 'Waiting...';
+  document.getElementById('dv2').style.color = 'var(--sub)';
+  document.getElementById('dv3').textContent = '\u2014';
+  document.getElementById('dv4').textContent = '\u2014';
+  document.getElementById('dv5').textContent = 'Waiting...';
+  document.getElementById('dv5').style.color = 'var(--sub)';
+  document.getElementById('dv6').textContent = '\u2014';
+  document.getElementById('dv6').style.color = 'var(--sub)';
+  document.getElementById('dv7').textContent = '\u2014';
+  document.getElementById('dv7').style.color = 'var(--sub)';
+  document.getElementById('dv8').innerHTML = 'Processing pipeline idle. Awaiting voice event.';
+  document.getElementById('dv9').textContent = '\u2014';
+  document.getElementById('dv9').style.color = 'var(--sub)';
+  document.getElementById('dv10').textContent = 'Waiting...';
+  document.getElementById('dv10').style.color = 'var(--sub)';
+  document.getElementById('dv11').textContent = '\u2014';
+  document.getElementById('dv11').style.color = 'var(--sub)';
+  document.getElementById('dv12').textContent = 'Transmission pipeline idle.';
+  document.getElementById('startBtn').style.display = 'inline-block';
+  document.getElementById('resetBtn').style.display = 'none';
+}
+</script>
+
+
+</body></html>
